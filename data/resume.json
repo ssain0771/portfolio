@@ -6,50 +6,6 @@
     "variants": {
         "full": {
             "printProfile": "Spatial Data Science graduate of Mount Royal University with a background in physics and chemistry, building GIS workflows, data analyses, and web tools in Python, SQL, and JavaScript. Experienced in satellite imagery classification, environmental data analysis, and producing stakeholder-ready outputs across scientific and technical domains.",
-            "printProjects": [
-                {
-                    "role": "Solar Farm GIS Analysis",
-                    "organization": "ArcGIS Pro",
-                    "period": "2025",
-                    "details": ["Suitability analysis ranking four candidate solar farm sites by capacity, annual generation, and infrastructure access cost."]
-                },
-                {
-                    "role": "Competitive Game Patch Analysis",
-                    "organization": "Python · Pandas · Matplotlib",
-                    "period": "2025",
-                    "details": ["Before/after comparison quantifying balance patch impact on agent and role pick rates across ranked and professional play."]
-                },
-                {
-                    "role": "Calgary Parks & Pathways Web Map",
-                    "organization": "Leaflet · JavaScript",
-                    "period": "2025",
-                    "details": ["Interactive web map with toggleable layers and spatial filtering for Calgary's green-space and pathway network."]
-                },
-                {
-                    "role": "Calgary Housing Affordability Dashboard",
-                    "organization": "Python · Dash · Plotly · pandas",
-                    "period": "2025",
-                    "details": ["Interactive choropleth dashboard mapping 2024 assessment values by community; budget slider recolours affordability in real time across 200,000+ property records."]
-                },
-                {
-                    "role": "Olympic Games Data Analysis",
-                    "organization": "Python · SQLite · pandas · Matplotlib",
-                    "period": "2025",
-                    "details": ["SQL-driven analysis of athlete and country performance across Olympic editions; custom Gold/Silver/Bronze palette applied across all publication-ready figures."]
-                },
-                {
-                    "role": "Multi-format Data Extraction Pipeline",
-                    "organization": "Python · pandas · pdfplumber",
-                    "period": "2025",
-                    "details": ["Modular ETL pipeline extracting urban growth data from CSV, JSON, and PDF sources into a unified validated dataset with per-stage error detection."]
-                },
-                {
-                    "role": "Reinforcement Learning Lab",
-                    "organization": "Python · Stable-Baselines3 · Gymnasium",
-                    "period": "2025",
-                    "details": ["Seven trained RL agents across Q-learning, REINFORCE, DQN, PPO, and Unity ML-Agents; each evaluated and published to Hugging Face Hub."]
-                }
-            ],
             "education": [
                 {
                     "year": "2019 - 2025",
