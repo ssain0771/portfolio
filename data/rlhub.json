@@ -2,11 +2,11 @@
     "page": {
         "eyebrow": "Portfolio / RL Models",
         "title": "Trained reinforcement learning agents across algorithm families and environments.",
-        "description": "Seven agents built through the Hugging Face Deep RL Course, covering tabular Q-learning, policy gradients, DQN, PPO, and Unity ML-Agents.",
+        "description": "Thirteen agents built while completing the Hugging Face Deep RL Course, covering tabular Q-learning, policy gradients, DQN, PPO (Stable-Baselines3, from-scratch PyTorch, and Unity ML-Agents), A2C, multi-agent self-play, and asynchronous RL with Sample-Factory.",
         "section": {
             "eyebrow": "Hugging Face Hub",
             "heading": "Published models",
-            "description": "Each agent was trained, evaluated, and published to the Hugging Face Hub as part of the Deep RL Course."
+            "description": "Each agent was trained, evaluated, and published to the Hugging Face Hub while completing the Deep RL Course."
         }
     },
     "items": [
@@ -92,6 +92,78 @@
             "actionExternal": true,
             "summary": "Tabular Q-learning agent trained on the deterministic (no-slip) version of FrozenLake - navigate from start to goal without falling in a hole.",
             "note": "The no-slip variant removes environment stochasticity, making it a cleaner case for learning Q-values from a fixed transition model.",
+            "noteLabel": "Why it matters"
+        },
+        {
+            "id": "ppo-pyramids",
+            "title": "PPO · Pyramids (Unity ML-Agents)",
+            "label": "PPO (Unity ML-Agents)",
+            "sublabel": "Pyramids - sparse-reward exploration",
+            "actionHref": "https://huggingface.co/ssain0771/ppo-Pyramids",
+            "actionText": "View on Hugging Face",
+            "actionExternal": true,
+            "summary": "PPO agent trained in the Pyramids environment, where the agent must find a switch, press it, then locate the pyramid it reveals - a sparse-reward task with no signal until the sequence is completed correctly.",
+            "note": "Sparse rewards make naive exploration fail; Unity ML-Agents' PPO setup here relies on curiosity-driven exploration to discover the rewarded sequence at all.",
+            "noteLabel": "Why it matters"
+        },
+        {
+            "id": "ppo-snowballtarget",
+            "title": "PPO · SnowballTarget (Unity ML-Agents)",
+            "label": "PPO (Unity ML-Agents)",
+            "sublabel": "SnowballTarget",
+            "actionHref": "https://huggingface.co/ssain0771/ppo-SnowballTarget",
+            "actionText": "View on Hugging Face",
+            "actionExternal": true,
+            "summary": "PPO agent trained to throw snowballs at a moving target in a custom Unity ML-Agents environment.",
+            "note": "First custom (non-Gym) Unity environment in the course progression - establishes the ML-Agents training/export workflow used again for Pyramids and Huggy.",
+            "noteLabel": "Why it matters"
+        },
+        {
+            "id": "a2c-pandareach",
+            "title": "A2C · PandaReachDense-v3",
+            "label": "A2C",
+            "sublabel": "panda-gym robotic arm reaching",
+            "actionHref": "https://huggingface.co/ssain0771/a2c-PandaReachDense-v3",
+            "actionText": "View on Hugging Face",
+            "actionExternal": true,
+            "summary": "Advantage Actor-Critic agent trained on a simulated Panda robotic arm to reach target positions in 3D space, using the dense-reward variant of the task. Mean reward -0.19 ± 0.07 across evaluation episodes.",
+            "note": "A2C's combined actor-critic update generalizes cleanly from discrete Gym control to a continuous, multi-dimensional robotics action space.",
+            "noteLabel": "Why it matters"
+        },
+        {
+            "id": "poca-soccertwos",
+            "title": "POCA · SoccerTwos (Unity ML-Agents)",
+            "label": "POCA (multi-agent)",
+            "sublabel": "SoccerTwos - competitive self-play",
+            "actionHref": "https://huggingface.co/ssain0771/poca-SoccerTwos",
+            "actionText": "View on Hugging Face",
+            "actionExternal": true,
+            "summary": "Multi-agent POCA (MA-POCA) agents trained to play 2v2 soccer against each other through competitive self-play, coordinating with teammates while adapting to an opposing team that improves over time.",
+            "note": "Multi-agent training breaks the single stationary environment assumption behind most RL algorithms - the opponent's policy keeps shifting as it learns, so the agent has to keep adapting rather than converging against a fixed target.",
+            "noteLabel": "Why it matters"
+        },
+        {
+            "id": "ppo-lunarlander-v2",
+            "title": "PPO (from scratch) · LunarLander-v2",
+            "label": "PPO (custom PyTorch)",
+            "sublabel": "Box2D continuous control",
+            "actionHref": "https://huggingface.co/ssain0771/ppo-LunarLander-v2",
+            "actionText": "View on Hugging Face",
+            "actionExternal": true,
+            "summary": "PPO implemented from scratch in PyTorch - clipped surrogate objective, GAE, and the actor-critic update written manually rather than via Stable-Baselines3. Trained for 1M timesteps across 8 parallel environments; mean reward 122.65 ± 50.04.",
+            "note": "Reimplementing PPO's internals (clipping, advantage estimation, value loss) builds a working understanding of the algorithm that using a library alone doesn't - a direct complement to the SB3-based LunarLander-v3 agent above.",
+            "noteLabel": "Why it matters"
+        },
+        {
+            "id": "vizdoom-health-gathering",
+            "title": "APPO · ViZDoom Health Gathering Supreme",
+            "label": "APPO (Sample-Factory)",
+            "sublabel": "doom_health_gathering_supreme",
+            "actionHref": "https://huggingface.co/ssain0771/rl_course_vizdoom_health_gathering_supreme",
+            "actionText": "View on Hugging Face",
+            "actionExternal": true,
+            "summary": "Asynchronous PPO agent trained with Sample-Factory 2.0 to navigate a ViZDoom level and collect health items while avoiding damage. Mean reward 11.45 ± 3.40.",
+            "note": "Sample-Factory trains with asynchronous, high-throughput rollout collection rather than SB3's synchronous loop - the same class of infrastructure used for large-scale RL research.",
             "noteLabel": "Why it matters"
         }
     ]

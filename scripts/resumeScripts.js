@@ -375,17 +375,33 @@ function renderPrintEntries(target, entries) {
     Promise.all([
         fetch(getResumeDataPath("index.json")).then((response) => response.json()),
         fetch(getResumeDataPath("resume.json")).then((response) => response.json()),
-        fetch(getResumeDataPath("private.json")).then((response) => response.json()).catch(() => null)
+        fetch(getResumeDataPath("private.json")).then((response) => response.json()).catch(() => null),
+        fetch(getResumeDataPath("resume.private.json")).then((response) => response.json()).catch(() => null)
     ])
-        .then(([indexJson, resumeJson, privateJson]) => {
+        .then(([indexJson, resumeJson, privateJson, resumePrivateJson]) => {
             indexContent = indexJson;
             resumeContent = resumeJson;
             privateContent = privateJson;
+
+            /*
+                data/resume.private.json is gitignored and only present locally.
+                When it loads, it adds the tailored (non-public) resume variants; on the public
+                deployment the fetch 404s and the site silently falls back to the Full resume only.
+            */
+            if (resumePrivateJson) {
+                resumeContent.variantLabels = { ...(resumeContent.variantLabels || {}), ...(resumePrivateJson.variantLabels || {}) };
+                resumeContent.variants = { ...(resumeContent.variants || {}), ...(resumePrivateJson.variants || {}) };
+            }
 
             renderProfile();
 
             const labels = resumeContent.variantLabels || {};
             const keys = Object.keys(resumeContent.variants || {});
+            const variantSelectWrap = document.querySelector(".resume-select-wrap");
+
+            if (variantSelectWrap) {
+                variantSelectWrap.style.display = keys.length > 1 ? "" : "none";
+            }
 
             if (variantSelect) {
                 variantSelect.innerHTML = "";

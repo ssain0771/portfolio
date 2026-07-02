@@ -197,36 +197,38 @@
             "pageHref": "projects/hub.html?id=rl",
             "image": "projects/images/lunar_lander.png",
             "imageAlt": "LunarLander-v3 agent landing sequence",
-            "summary": "Seven trained RL agents from the Hugging Face Deep RL Course, covering tabular Q-learning, REINFORCE, DQN, PPO, and Unity ML-Agents across classic control, Atari, and continuous environments.",
-            "impact": "Completed the full Hugging Face Deep RL Course with trained and evaluated agents across five algorithm families, each published to the Hub for reuse and review.",
+            "summary": "Thirteen trained RL agents completing the Hugging Face Deep RL Course, covering tabular Q-learning, REINFORCE, DQN, PPO (Stable-Baselines3, from-scratch PyTorch, and Unity ML-Agents), A2C, multi-agent self-play, and asynchronous RL - across classic control, Atari, robotics, and Unity environments.",
+            "impact": "Completed the full Hugging Face Deep RL Course with trained and evaluated agents across eight algorithm families, each published to the Hub for reuse and review.",
             "role": "Model training, evaluation, experiment tracking, Hugging Face Hub publishing",
-            "tools": "Python, Stable-Baselines3, Gymnasium, Unity ML-Agents, NumPy, Matplotlib, Hugging Face Hub",
+            "tools": "Python, PyTorch, Stable-Baselines3, Sample-Factory, Gymnasium, panda-gym, Unity ML-Agents, NumPy, Matplotlib, Hugging Face Hub",
             "tags": [
                 "machine-learning",
                 "reinforcement-learning",
                 "python"
             ],
-            "overview": "A collection of trained reinforcement learning agents published to the Hugging Face Hub, built through the Hugging Face Deep RL Course. The course progressed from tabular Q-learning through policy gradients (REINFORCE), deep Q-networks (DQN), PPO with parallel environments, and Unity ML-Agents.",
+            "overview": "A collection of trained reinforcement learning agents published to the Hugging Face Hub, built while completing the Hugging Face Deep RL Course. The course progressed from tabular Q-learning through policy gradients (REINFORCE), deep Q-networks (DQN), PPO across Stable-Baselines3 and Unity ML-Agents, actor-critic methods (A2C) on robotics tasks, multi-agent self-play, a from-scratch PyTorch PPO implementation, and asynchronous RL with Sample-Factory.",
             "challenge": "Each agent required its own training configuration, environment setup, and evaluation workflow. The goal was to produce trained, evaluated, and packaged agents rather than one-off notebooks.",
             "process": [
                 "Trained tabular Q-learning agents on FrozenLake-v1 (no-slip) and Taxi-v3 using explicit Q-tables in small discrete environments.",
                 "Applied REINFORCE (policy gradient) to CartPole-v1 and PixelCopter, learning to sample and update policies directly from episode returns.",
                 "Trained a DQN agent on SpaceInvadersNoFrameskip-v4 and a PPO agent on LunarLander-v3 (302.83 mean reward) using parallel environments and evaluation callbacks.",
-                "Trained a Huggy agent using Unity ML-Agents PPO in a custom continuous-action environment."
+                "Trained Unity ML-Agents PPO agents for SnowballTarget, Pyramids (sparse-reward exploration), and Huggy in custom continuous-action environments.",
+                "Trained an A2C agent on the panda-gym PandaReachDense-v3 robotics task and multi-agent POCA agents for competitive 2v2 self-play in SoccerTwos.",
+                "Reimplemented PPO from scratch in PyTorch for LunarLander-v2, and trained an asynchronous APPO agent with Sample-Factory 2.0 on a ViZDoom level."
             ],
-            "outcome": "Seven trained agents across five algorithm families, each evaluated and published to Hugging Face Hub.",
+            "outcome": "Thirteen trained agents across eight algorithm families, each evaluated and published to Hugging Face Hub.",
             "detailSections": [
                 {
                     "title": "What this project was",
-                    "body": "A structured progression through the Hugging Face Deep RL Course - from tabular methods to deep networks to continuous control - with each agent trained, evaluated, and published."
+                    "body": "A structured progression through the full Hugging Face Deep RL Course - from tabular methods through deep networks, continuous control, robotics, and multi-agent self-play, to a from-scratch PPO implementation and asynchronous RL - with each agent trained, evaluated, and published."
                 },
                 {
                     "title": "How it was done",
-                    "body": "Each agent used the appropriate library and training loop for its algorithm family: Q-tables for tabular methods, PyTorch policy networks for REINFORCE, Stable-Baselines3 for PPO and DQN, and Unity ML-Agents for Huggy."
+                    "body": "Each agent used the appropriate library and training loop for its algorithm family: Q-tables for tabular methods, PyTorch policy networks for REINFORCE and the from-scratch PPO agent, Stable-Baselines3 for PPO/DQN/A2C, Unity ML-Agents for SnowballTarget/Pyramids/Huggy/SoccerTwos, and Sample-Factory for asynchronous ViZDoom training."
                 },
                 {
                     "title": "Why it mattered",
-                    "body": "It demonstrates breadth across RL algorithm families and the discipline to follow a structured training and evaluation workflow from start to finish."
+                    "body": "It demonstrates breadth across RL algorithm families - including multi-agent and asynchronous training - and the discipline to follow a structured training and evaluation workflow from start to finish."
                 }
             ],
             "links": [
