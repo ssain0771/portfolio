@@ -8,7 +8,7 @@
             "printProfile": "Spatial Data Science graduate of Mount Royal University with a background in physics and chemistry, building GIS workflows, data analyses, and web tools in Python, SQL, and JavaScript. Experienced in satellite imagery classification, environmental data analysis, and producing stakeholder-ready outputs across scientific and technical domains.",
             "education": [
                 {
-                    "year": "2019 - 2025",
+                    "year": "September 2019 - May 2025",
                     "program": "Bachelor of Science in General Science (Physics, Chemistry)",
                     "institution": "Mount Royal University",
                     "details": [
@@ -16,11 +16,11 @@
                     ]
                 },
                 {
-                    "year": "2025 - 2026",
+                    "year": "September 2025 - May 2026",
                     "program": "Spatial Data Science Certificate",
                     "institution": "Mount Royal University",
                     "details": [
-                        "Completed April 2026. GPA: 3.90."
+                        "Post-baccalaureate program completed May 2026. GPA: 3.90."
                     ]
                 }
             ],
@@ -28,7 +28,7 @@
                 {
                     "role": "GIS / Data Analyst (Community Service Learning)",
                     "organization": "Freshwater Conservation Canada",
-                    "period": "Jan 2026 - Apr 2026",
+                    "period": "January 2026 - May 2026",
                     "details": [
                         "Classified satellite and drone imagery using a Random Trees model to map land cover at Elk Creek, an active stream restoration site.",
                         "Built 2023-2025 change detection to quantify vegetation recovery; assessed accuracy using confusion matrices."
@@ -37,14 +37,14 @@
                 {
                     "role": "Hydrologic Solutions Internship",
                     "organization": "Hydrologic Solutions Inc.",
-                    "period": "Jan 2024 - Apr 2024",
+                    "period": "January 2025 - Apr 2025",
                     "details": [
                         "Processed and tabulated lab results into clean templates to support contamination analysis.",
                         "Compared results with historical datasets and guidelines to identify exceedances."
                     ]
                 },
                 {
-                    "role": "Realtor Assistant (Part time)",
+                    "role": "Realtor Assistant (Part-time)",
                     "organization": "Independent/Family Business",
                     "period": "2018 - 2026",
                     "details": [
@@ -54,7 +54,7 @@
                 {
                     "role": "Fulfillment Associate",
                     "organization": "Amazon",
-                    "period": "Sep 2020 - Feb 2021",
+                    "period": "Sepember 2020 - Febuary 2021",
                     "details": [
                         "Worked in a high-throughput operation; resolved labeling/packaging exceptions to keep flow accurate."
                     ]
