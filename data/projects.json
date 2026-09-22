@@ -191,7 +191,7 @@
         },
         {
             "id": "rl-hub",
-            "featured": false,
+            "featured": true,
             "title": "Reinforcement Learning Lab",
             "slug": "reinforcement-learning-lab",
             "pageHref": "projects/hub.html?id=rl",
@@ -281,7 +281,7 @@
         },
         {
             "id": "calgary-housing",
-            "featured": true,
+            "featured": false,
             "title": "Calgary Housing Affordability Dashboard",
             "slug": "calgary-housing-affordability-dashboard",
             "pageHref": "projects/project.html?id=calgary-housing",
@@ -293,11 +293,11 @@
             "role": "Data processing, geospatial visualization, Dash application development",
             "tools": "Python, Dash, Plotly, pandas, GeoJSON",
             "tags": [
-                "gis",
                 "data-analysis",
                 "python",
                 "plotly",
                 "pandas",
+                "gis",
                 "geojson",
                 "visualization",
                 "web"
@@ -328,7 +328,7 @@
         },
         {
             "id": "fcc-hub",
-            "featured": true,
+            "featured": false,
             "title": "FCC Field Studies",
             "slug": "fcc-field-studies",
             "pageHref": "projects/hub.html?id=fcc",
@@ -718,7 +718,7 @@
         {
             "id": "land-cover",
             "hidden": true,
-            "featured": false,
+            "featured": true,
             "title": "Stream Health & Land Cover Classification",
             "slug": "stream-health-land-cover-classification",
             "pageHref": "projects/project.html?id=land-cover",

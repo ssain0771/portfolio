@@ -5,7 +5,7 @@
     },
     "variants": {
         "full": {
-            "printProfile": "Spatial Data Science graduate of Mount Royal University with a background in physics and chemistry, building GIS workflows, data analyses, and web tools in Python, SQL, and JavaScript. Experienced in satellite imagery classification, environmental data analysis, and producing stakeholder-ready outputs across scientific and technical domains.",
+            "printProfile": "Data-focused Mount Royal University graduate with a background in physics and chemistry, building data analyses, machine learning, and software in Python, SQL, and JavaScript, with strong GIS and spatial analysis skills. Experienced in machine learning and computer vision, environmental data analysis, and producing stakeholder-ready outputs across scientific and technical domains.",
             "education": [
                 {
                     "year": "Sept 2019 - May 2025",
@@ -73,19 +73,6 @@
                     ]
                 },
                 {
-                    "label": "GIS",
-                    "items": [
-                        "ArcGIS Pro",
-                        "ArcGIS Online",
-                        "ArcGIS Field Maps",
-                        "ArcGIS Survey123",
-                        "QGIS",
-                        "Google Earth Engine",
-                        "StoryMaps",
-                        "Web GIS"
-                    ]
-                },
-                {
                     "label": "Data / ML",
                     "items": [
                         "Pandas",
@@ -98,6 +85,19 @@
                         "PyTorch",
                         "YOLOv8",
                         "Machine Learning"
+                    ]
+                },
+                {
+                    "label": "GIS",
+                    "items": [
+                        "ArcGIS Pro",
+                        "ArcGIS Online",
+                        "ArcGIS Field Maps",
+                        "ArcGIS Survey123",
+                        "QGIS",
+                        "Google Earth Engine",
+                        "StoryMaps",
+                        "Web GIS"
                     ]
                 },
                 {

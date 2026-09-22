@@ -1,9 +1,9 @@
 ﻿{
-    "tagline": "Spatial Data Science | Workflow Automation | Sciences",
+    "tagline": "Data Science | Machine Learning | Spatial Analysis",
     "name": "Simranjot Saini",
-    "heroTitle": "Spatial Data Scientist with a background in physics and chemistry.",
-    "heroLead": "I work across GIS, automation, and scientific problem solving to turn messy information into maps, analyses, and tools that are easier to trust and act on. Currently completing a Spatial Data Science certificate at Mount Royal University, with hands-on project work in environmental reporting, web mapping, and data visualization.",
-    "heroBio": "I like tricky problems that take some patience to work through, reading, and finding new things to learn on my own - which is usually how areas like reinforcement learning or game development end up in the mix alongside the core GIS work.",
+    "heroTitle": "Data Scientist and Developer working in Python, ML, and Geospatial Analysis.",
+    "heroLead":  "I build data and machine learning workflows in Python, alongside GIS and automation, to turn messy information into models, analyses, and tools that are easier to trust and act on. I recently completed a Spatial Data Science certificate at Mount Royal University, and my project work spans reinforcement learning, data visualization, environmental analysis, and web mapping.",
+    "heroBio": "I like tricky problems that take some patience to work through, reading, and finding new things to learn on my own, which is usually how areas like reinforcement learning or game development end up in the mix alongside my data and GIS work.",
     "location": "Calgary, Alberta",
     "availability": "Available full time",
     "about": [
@@ -17,8 +17,8 @@
             "text": "GIS workflows, map-based decision support, suitability analysis, and web mapping."
         },
         {
-            "title": "Workflow automation",
-            "text": "Python-driven data cleaning, repeatable analysis steps, and tools that reduce manual work."
+            "title": "Data and automation",
+            "text": "Python-driven data cleaning, machine learning, repeatable analysis steps, and tools that reduce manual work."
         },
         {
             "title": "Scientific grounding",
