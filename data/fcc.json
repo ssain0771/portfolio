@@ -65,7 +65,7 @@
             "actionText": "View case study",
             "image": "projects/images/whispering_pines_field_map.png",
             "imageAlt": "ArcGIS Field Maps screenshot from the Whispering Pines site visit",
-            "summary": "A site visit and field data collection exercise at Whispering Pines, an FCC restoration site north of Ghose Lake. Recorded vegetation, stream features, land cover, and woody infrastructure using ArcGIS Field Maps.",
+            "summary": "A site visit and field data collection exercise at Whispering Pines, an FCC restoration site north of Ghost Lake. Recorded vegetation, stream features, land cover, and woody infrastructure using ArcGIS Field Maps.",
             "note": "Field data collection, site survey, feature recording",
             "noteLabel": "Role",
             "tags": ["ArcGIS Field Maps", "ArcGIS Online"]
